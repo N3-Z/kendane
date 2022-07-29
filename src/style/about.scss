@@ -1,0 +1,81 @@
+@import './color.scss';
+@import './style.scss';
+
+.about-us{
+    // background-image: url('../img/background.png');
+    // width: 100%;
+}
+
+
+.about-msg{
+    margin: 4% 10%;
+    padding: 2% 5%;
+    background-color: $yellow;
+    border-radius: 10px;
+    h2{
+        font-weight: 500;
+    }
+    p {
+        // line-height: 1.778rem;
+    }
+}
+
+.container-o{
+    margin: 4% 10%;
+    position: relative;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    >div{
+        display: inline-block;
+    }
+}
+
+.container-our-img{
+    width: 50%;
+    >img{
+        position: relative;
+        display: hide;
+        width: 100%;
+    }
+}
+
+.container-our{
+    top: 0;
+    width: 50%;    
+    .our-services{
+        display: block;
+        margin: 4% 0%;
+        text-align: left;
+        
+        h3{
+            font-weight: 500;
+            color: $blue;
+        }
+        p{
+            font-size: 13px;
+            color:$grey;
+        }
+    }
+}
+
+.about{
+    .about-video{
+        text-align: center;
+    }
+    iframe{
+        width: 60%;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 800px){
+    .container-o {
+        display: block;
+        >div{
+            display: block;
+            width: 100%;
+        }
+    }
+}

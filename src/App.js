@@ -1,0 +1,84 @@
+import './style/style.scss';
+import Home from './component/Home';
+import Services from './component/Services';
+import About from './component/About';
+import Certificate from './component/Certificate';
+import logo from './img/google.png'
+// import Typical from 'react-typical'
+// import logo from './img/logo.jfif'
+import $ from 'jquery'
+
+function App() {
+  $(function() {
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 1){  
+        $('header').addClass("sticky");
+      }
+      else{
+        $('header').removeClass("sticky");
+      }
+    })
+  });
+  function home(){
+    $('*').animate({scrollTop: 0}, 1000)
+  }
+  function about(){
+    let body_height = document.body.scrollHeight
+    let about_height = $('.about').height()
+    $('*').animate({scrollTop: about_height}, 1000)
+  }
+  function service(){
+    let body_height = document.body.scrollHeight
+    let service_height = $('.container-service').height()
+    $('*').animate({scrollTop: service_height}, 1000)
+  }
+  return (
+    <div className="App">
+      <header className='shadow'>
+        <div className='header-logo'>
+          <img src={logo} alt="" />
+        </div>
+        <div className='header-menu'>
+          <div onClick={home}>Home</div>
+          <div onClick={service}>Service</div>
+          <div onClick={about}>About Us</div>
+        </div>
+      </header>
+      
+      <Home />
+      <Services />
+      <Certificate />
+      <About />
+      <footer>
+        <div className='footer-detail'>
+          <div>
+            <span>ADDRESS </span>
+            <p>
+              Halte TransJakarta Dukuh Atas 1, RT.10/RW.11, Kuningan, Setia Budi, Setiabudi, South Jakarta City, Jakarta 10250
+            </p>
+          </div>
+          <div className='detail-contact'>
+            <p>
+            kendane@email.com
+            <br />
+            082193851294
+            </p>
+          </div>
+          
+        </div>
+        <div className='footer-s'>
+          <div className='socialmedia'>
+            <a href="#" className="fa fa-facebook"></a>
+            <a href="#" className="fa fa-twitter"></a>
+            <a href="#" className="fa fa-linkedin"></a>
+          </div>
+          <div className='copy-right'>
+            © Copyright Kandane 2022. All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;

@@ -1,0 +1,37 @@
+@import './color.scss'; 
+
+.certificate{
+    margin: 2% 0%;
+    background: url('../img/bg2.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .certificate-msg{
+        color: white;
+        padding-left: 10%;
+        padding-right: 20%;
+        padding-top: 2%;
+        font-size: 21px;
+        font-weight: 500;
+        p{
+            font-size: 13px;
+        }
+        span{
+            color: $blue;
+            font-size: 17px;
+        }
+    }
+
+    .certificate-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 0%;
+    }
+    img{
+        width: 100px;
+        margin: 0% 1%;
+    }
+}
