@@ -26,7 +26,7 @@ export default class Services extends Component {
             </div>
             <div className='service-detail'>
               <span className='service-name'>Data Protection</span>
-              <p>Providing solution how to handle the sensitive data whitin the organizations</p>
+              <p>Providing solution how to handle the sensitive data within the organizations</p>
             </div>
           </div>
           <div className='services'>
@@ -35,7 +35,7 @@ export default class Services extends Component {
             </div>
             <div className='service-detail'>
               <span className='service-name'>IT Services</span>
-              <p>IT Govermance services, IT service management, Penetration Testing</p>
+              <p>IT Governance services, IT service management, Penetration Testing</p>
             </div>
           </div>
           <div className='services'>

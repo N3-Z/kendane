@@ -73,7 +73,7 @@ function App() {
             <a href="#" className="fa fa-linkedin"></a>
           </div>
           <div className='copy-right'>
-            © Copyright Kandane 2022. All Rights Reserved.
+            © Copyright Kendane 2022. All Rights Reserved.
           </div>
         </div>
       </footer>
