@@ -10,7 +10,7 @@ export default class Home extends Component {
           {/* <div className='home-text1'>SECURITY</div> */}
           {/* <div className='home-text2'>CYBER SECURITY</div> */}
         </div>
-        <div className="home-msg">
+        <div className="home-msg container">
           <span>Our Services </span>
           <Typical
             loop={Infinity}
