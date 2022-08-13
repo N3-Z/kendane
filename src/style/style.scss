@@ -1,55 +1,67 @@
 @import './color.scss';
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
 }
+
+
 body, h1, h2, h3, h4, h5, p {
     font-family: 'Manrope',sans-serif;
 }
 
-
+.container{
+    margin: auto;
+    max-width: 1250px;
+}
 
 header{
     position: fixed;
     top: 0;
     width: 100%;
     background: $header;
-    text-align: right;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 400;
     color: white;
     background: rgba(11, 11, 11, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+
     transition: all 0.4s ease;
     -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     z-index: 1;
-    >.header-logo{
-        width: 10%;
-        height: 50px;
-        >img{
-            position: relative;
-            top: 0;
-            height: 50px;
-        }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 1.25rem;
+        padding-block: 0.825rem;
     }
-    >.header-menu{
-        width: 90%;
+
+    .header-logo img{
+        width: 42px;
+        position: relative;
+        top: 0;
     }
-    >.header-menu>div{
+
+    .header-menu{
+        min-width: 210px;
+        width: 60%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .header-menu div{
         cursor: pointer;
         position: relative;
-        display: inline-block;
-        padding: 2% 2%;
-        text-align: center;
     }
-    >.header-menu>div:hover{
+
+    .header-menu div:hover{
         color: $blue;
     }
     

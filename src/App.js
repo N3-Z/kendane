@@ -35,13 +35,15 @@ function App() {
   return (
     <div className="App">
       <header className='shadow'>
-        <div className='header-logo'>
-          <img src={logo} alt="" />
-        </div>
-        <div className='header-menu'>
-          <div onClick={home}>Home</div>
-          <div onClick={service}>Service</div>
-          <div onClick={about}>About Us</div>
+        <div className='container'>
+          <div className='header-logo'>
+            <img src={logo} alt="" />
+          </div>
+          <div className='header-menu'>
+            <div onClick={home}>Home</div>
+            <div onClick={service}>Service</div>
+            <div onClick={about}>About Us</div>
+          </div>
         </div>
       </header>
       

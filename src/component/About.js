@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import '../style/about.scss'
 import serviceimg from '../img/servicebg.webp';
-import Slider from './Slider'
 
 export default class About extends Component {
   render() {
@@ -10,10 +9,10 @@ export default class About extends Component {
         <div className='about-msg'>
           <h2>When you hire us</h2>
           <p>
-          We are truly aware, call centre has important roles in many industries not only providing the outbound or inbound call, but organisation also must comply with some regulations for example Perlindungan nasabah  (POJK number 18 tahun 2018).
+          We are truly aware, call centre has important roles in many industries not only providing the outbound or inbound call, but organization also must comply with some regulations for example Perlindungan nasabah  (POJK number 18 tahun 2018).
           <br />
           <br />
-          Kandane has commitment to protect your customer data and working closely with your information security teams.
+          Kendane has commitment to protect your customer data and working closely with your information security teams.
           <br />
           <br />
           Best of all, our talent are ready to serve your customer and ready for going extra mile with you.
@@ -45,7 +44,7 @@ export default class About extends Component {
         </div>
         <div className='about-video'>
 
-          <iframe src="https://www.youtube.com/embed/clU8c2fpk2s" title="【Penyanyi Wanita】 Lemon / Kenshi Yonezu (Lagu Cover oleh KOBASOLO & Harutya)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <iframe src="https://www.youtube.com/embed/clU8c2fpk2s" title="【Penyanyi Wanita】 Lemon / Kenshi Yonezu (Lagu Cover oleh KOBASOLO & Harutya)" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
       </div>
     )
