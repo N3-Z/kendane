@@ -1,7 +1,8 @@
 @import './color.scss'; 
 
 .certificate{
-    margin: 2% 0%;
+    // margin: 2% 0%;
+    padding-block: 5rem;
     background: url('../img/bg2.webp');
     background-attachment: fixed;
     background-position: center;
@@ -10,17 +11,25 @@
     
     .certificate-msg{
         color: white;
-        padding-left: 10%;
-        padding-right: 20%;
-        padding-top: 2%;
-        font-size: 21px;
-        font-weight: 500;
-        p{
-            font-size: 13px;
+        max-width: 768px;
+        padding-block: 0;
+        margin: auto;
+
+        h1{
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            text-align: center;
         }
+
+        p{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
         span{
             color: $blue;
-            font-size: 17px;
+            font-size: 1.125rem;
         }
     }
 
@@ -28,10 +37,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2% 0%;
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
     }
+
     img{
-        width: 100px;
+        width: 29vw;
+        max-width: 100px;
         margin: 0% 1%;
     }
 }

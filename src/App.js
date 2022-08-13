@@ -26,8 +26,7 @@ function App() {
     let home_height = $("#home").height();
     let service_height = $("#service").height();
     let certificate_height = $("#certificate").height();
-    let total_height =
-      certificate_height + service_height + home_height - header_height;
+    let total_height = certificate_height + service_height + home_height;
 
     $("*").animate({ scrollTop: total_height }, 1000);
   }
