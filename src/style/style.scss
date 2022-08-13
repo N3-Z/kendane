@@ -90,48 +90,74 @@ header.sticky{
 footer{
     background: $black;
     color: white;
-    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+
     .footer-detail{
+        display: flex;
+        flex-direction: column;
+        padding-top: 2.5rem;
+        
         span{
-            font-weight: bold;
-        }
-        >div{
-            display: inline-block;
-            width: 30%;
-            padding: 4% 10%;
-        }
-        .detail-contact{
-            text-align: right;
+            font-weight: lighter;
+            font-size: 1.25rem;
+            color: $yellow;
         }
         p{
-            font-size: 13px;
-            color: $grey;
+            font-size: 1rem;
+            color: $header;
             text-decoration: underline;
+            margin-bottom: 1.5rem;
+            max-width: 420px;
         }
     }
+
     .footer-s{
-        border-top: 0.1px solid white;
-        padding-top: 2%;
-        padding-bottom: 4%;
+        margin-top: 1rem;
+        border-top: 0.1px solid $yellow;
+        padding-top: 1rem;
+        width: 100%;
         text-align: center;
+        // width: 320px;
     }
+
     a{
         text-decoration: none;
         color: white;
-        padding: 0.5%;
-        border-radius: 50%;
+        // padding: 0.5%;
+        padding: 0.25rem;
+        border-radius: 25px;
+        border-color: $yellow;
+        // background-color: $blue;
     }
-    a:hover{
-        background: $blue;
-    }
+
     .copy-right{
-        font-size: 13px;
+        margin-top: 0.25rem;
+        font-size: 0.8rem;
         color: grey;
+        width: 100%;
     }
+
 }
 
 .fa {
-    width: 20px;
+    width: 1.75rem;
+    transition: 200ms ease;
+    margin-inline: 0.5rem;
+}
+
+.fa:hover {
+    transform: scale(1.5, 1.5);
+    color: $yellow;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-detail {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        width: 100%;
+        padding-inline: 2rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {

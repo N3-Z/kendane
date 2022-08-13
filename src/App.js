@@ -60,15 +60,16 @@ function App() {
       <Certificate />
       <About />
       <footer>
-        <div className="footer-detail">
+        <div className="footer-detail container">
           <div>
-            <span>ADDRESS </span>
+            <span>ADDRESS</span>
             <p>
               Halte TransJakarta Dukuh Atas 1, RT.10/RW.11, Kuningan, Setia
               Budi, Setiabudi, South Jakarta City, Jakarta 10250
             </p>
           </div>
-          <div className="detail-contact">
+          <div>
+            <span>CONTACT</span>
             <p>
               kendane@email.com
               <br />
@@ -76,7 +77,7 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="footer-s">
+        <div className="footer-s container">
           <div className="socialmedia">
             <a href="#" className="fa fa-facebook"></a>
             <a href="#" className="fa fa-twitter"></a>
