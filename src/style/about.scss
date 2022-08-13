@@ -6,46 +6,72 @@
     // width: 100%;
 }
 
+.about{
+    padding-bottom: 2.5rem;
+}
 
-.about-msg{
-    margin: 4% 10%;
-    padding: 2% 5%;
-    background-color: $yellow;
-    border-radius: 10px;
-    h2{
-        font-weight: 500;
+.about-msg-container{
+    padding-block: 2.5rem;
+    // background-color: $yellow;
+    display: flex;
+    justify-content: center;
+
+    .about-msg{
+        margin: auto;
+        max-width: 720px;
+        background-color: $header;
+        padding: 1.5rem;
+        padding-block: 2.5rem;
+        padding-inline: 1.25rem;
+        margin-inline: 1rem;
+        text-align: center;
+        border: 2px solid $blue;
+        border-top: 6px solid $blue;
     }
+
+    h1{
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: $blue;
+        font-size: 2rem;
+    }
+
     p {
-        // line-height: 1.778rem;
+        text-align: left;
+        font-size: 1.125rem;
     }
 }
 
 .container-o{
-    margin: 4% 10%;
-    position: relative;
-    border-bottom: 1px solid black;
-    border-radius: 2px;
+    // margin: 4% 10%;
+    padding-block: 2.5rem;
+    // padding-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
+
+    border-bottom: 2px solid $blue;
+    border-top: 2px solid $blue;
+
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
     >div{
         display: inline-block;
     }
 }
 
 .container-our-img{
-    width: 50%;
-    >img{
-        position: relative;
-        display: hide;
+    max-width: 720px;
+    margin: auto;
+    > img {
         width: 100%;
     }
 }
 
 .container-our{
-    top: 0;
-    width: 50%;    
+    max-width: 720px;
+    margin: auto;
+
     .our-services{
-        display: block;
         margin: 4% 0%;
         text-align: left;
         
@@ -65,17 +91,30 @@
         text-align: center;
     }
     iframe{
-        width: 60%;
-        height: 50vh;
+        width: 92%;
+        max-width: 1024px;
+        aspect-ratio: 16/9;
     }
 }
 
-@media (max-width: 800px){
-    .container-o {
-        display: block;
-        >div{
-            display: block;
-            width: 100%;
-        }
+@media only screen and (min-width: 1024px) {
+    .container-o{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+
+    }
+    .container-our-img{
+        width: 55%;
+        margin-inline-end: 1.5rem;
+    }
+
+    .container-o, .about-msg-container{
+        padding-block: 5rem;
+    }
+
+    .about{
+        padding-bottom: 5rem;
     }
 }
+

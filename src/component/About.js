@@ -6,25 +6,31 @@ export default class About extends Component {
   render() {
     return (
       <div className="about" id="about">
-        <div className="about-msg">
-          <h2>When you hire us</h2>
-          <p>
-            We are truly aware, call centre has important roles in many
-            industries not only providing the outbound or inbound call, but
-            organization also must comply with some regulations for example
-            Perlindungan nasabah (POJK number 18 tahun 2018).
-            <br />
-            <br />
-            Kendane has commitment to protect your customer data and working
-            closely with your information security teams.
-            <br />
-            <br />
-            Best of all, our talent are ready to serve your customer and ready
-            for going extra mile with you.
-          </p>
+        <div className="about-msg-container">
+          <div className="about-msg">
+            <h1>Why you should hire us</h1>
+            <p>
+              We are truly aware, call centre has important roles in many
+              industries not only providing the outbound or inbound call, but
+              organization also must comply with some regulations for example
+              Perlindungan nasabah (POJK number 18 tahun 2018).
+              <br />
+              <br />
+              Kendane has commitment to protect your customer data and working
+              closely with your information security teams.
+              <br />
+              <br />
+              Best of all, our talent are ready to serve your customer and ready
+              for going extra mile with you.
+            </p>
+          </div>
         </div>
-        <div className="container-o">
-          <div className="container-our">
+
+        <div className="container-o container">
+        <div className="container-our-img">
+            <img src={serviceimg} alt="Kendane Services" />
+          </div>
+          <div className="container-our ">
             <div className="our-services">
               <h3>Secure Data Handling</h3>
               <p>
@@ -52,13 +58,12 @@ export default class About extends Component {
                 We try our best to support client due diligence, third party
                 security assessment process, working closely with your
                 information security to mitigate the risk.
+
               </p>
             </div>
           </div>
-          <div className="container-our-img">
-            <img src={serviceimg} alt="" />
-          </div>
         </div>
+
         <div className="about-video">
           <iframe
             src="https://www.youtube.com/embed/clU8c2fpk2s"

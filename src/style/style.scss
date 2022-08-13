@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
   
 body, h1, h2, h3, h4, h5, p {
@@ -58,10 +58,11 @@ header{
         color: $header;
         text-decoration: none;
         position: relative;
+        transition: all 0.2s ease;
     }
 
     .header-menu a:hover{
-        color: $blue;
+        color: $yellow;
     }
     
 }
@@ -71,6 +72,9 @@ header.sticky{
     transition: all 0.4s ease;
     .header-menu a{
         color: black;
+    }
+    .header-menu a:hover{
+        color: $blue;
     }
 }
 
