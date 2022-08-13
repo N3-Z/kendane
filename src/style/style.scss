@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-
+  
 body, h1, h2, h3, h4, h5, p {
     font-family: 'Manrope',sans-serif;
 }
@@ -37,8 +37,7 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-inline: 1.25rem;
-        padding-block: 0.825rem;
+        padding: 0.825rem;
     }
 
     .header-logo img{
@@ -56,12 +55,13 @@ header{
         justify-content: space-evenly;
     }
 
-    .header-menu div{
-        cursor: pointer;
+    .header-menu a{
+        color: $header;
+        text-decoration: none;
         position: relative;
     }
 
-    .header-menu div:hover{
+    .header-menu a:hover{
         color: $blue;
     }
     
@@ -69,15 +69,16 @@ header{
 
 header.sticky{
     background: $header !important;
-    color: black;
     transition: all 0.4s ease;
+    .header-menu a{
+        color: black;
+    }
 }
 
 .App{
     width: 100%;
-    // height: 100vh;
-    
 }
+
 .typing-text{
     margin: 2% 5%;
     font-size: 27px;

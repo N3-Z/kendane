@@ -5,7 +5,7 @@ import serviceimg from '../img/servicebg.webp';
 export default class About extends Component {
   render() {
     return (
-      <div className='about'>
+      <div className='about' id='about'>
         <div className='about-msg'>
           <h2>When you hire us</h2>
           <p>

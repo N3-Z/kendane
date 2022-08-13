@@ -5,7 +5,7 @@ import '../style/certificate.scss'
 export default class Certificate extends Component {
   render() {
     return (
-      <div className='certificate'>
+      <div className='certificate' id='certificate'>
         <div className='certificate-msg'>
           <h3>
             Our certification and accreditation

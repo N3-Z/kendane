@@ -23,14 +23,18 @@ function App() {
     $('*').animate({scrollTop: 0}, 1000)
   }
   function about(){
-    let body_height = document.body.scrollHeight
-    let about_height = $('.about').height()
-    $('*').animate({scrollTop: about_height}, 1000)
+    let header_height = $('header').height()
+    let home_height = $('#home').height()
+    let service_height = $('#service').height()
+    let certificate_height = $('#certificate').height()
+    let total_height = certificate_height + service_height + home_height - header_height
+
+    $('*').animate({scrollTop: total_height}, 1000)
   }
   function service(){
-    let body_height = document.body.scrollHeight
-    let service_height = $('.container-service').height()
-    $('*').animate({scrollTop: service_height}, 1000)
+    let header_height = $('header').height()
+    let home_height = $('#home').height()
+    $('*').animate({scrollTop: home_height - header_height}, 1000)
   }
   return (
     <div className="App">
@@ -40,9 +44,9 @@ function App() {
             <img src={logo} alt="" />
           </div>
           <div className='header-menu'>
-            <div onClick={home}>Home</div>
-            <div onClick={service}>Service</div>
-            <div onClick={about}>About Us</div>
+            <a href="#home" onClick={home}>Home</a>
+            <a href="#service" onClick={service}>Service</a>
+            <a href="#about" onClick={about}>About Us</a>
           </div>
         </div>
       </header>

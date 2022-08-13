@@ -8,7 +8,7 @@ import education from '../img/online-learning.png'
 export default class Services extends Component {
   render() {
     return (
-      <div className='container-service'>
+      <div className='container-service' id='service'>
         <div className='service-title'>OUR SERVICES</div>
         <div className='container-services'>
           <div className='services'>
