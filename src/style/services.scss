@@ -1,55 +1,69 @@
 @import './color.scss';
 
 .container-service{
-    margin-top: 2%;
-    text-align: center;
-    .service-title{
-        font-size: 21px;
+    // margin-top: 2%;
+    margin-block: 1.25rem;
+
+    .service-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
     }
+
     .container-services{
-        position: relative;
-        display: block;
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
         .services:hover{
-            width: 320px;
-            transition: all 0.4s ease;
+            transform: scale(1.1, 1.1);
         }
+
         .services{
-            position: relative;
-            display: inline-block;
+            display: flex;
+            justify-content: space-between;
             cursor: pointer;
             text-align: left;
+
             width: 300px;
             margin: 2%;
             padding: 1%;
             border: 1px solid $blue;
             border-top: 3px solid $blue;
             border-radius: 3px;
+            transition: all 0.4s ease;
 
-            >div{
-                display: inline-block;
+            > div{
+                display: flex;
+                flex-direction: column;
             }
+
             .service-img{
                 width: 25%;
                 padding: 2%;
             }
-            .service-img>img{
+
+            .service-img > img{
                 width: 100%;
             }
+
             .service-detail{
                 width: 70%;
                 color: $black;
                 text-overflow: ellipsis;
-                >p{
+
+                > p {
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    font-size: 13px;
+                    font-size: 0.8rem;
                     color: $grey;
-                    height: 50px;
+                    min-height: 50px;
                     // margin-bottom: 10%;
                 }
             }
         }
+
         .service-name{
             font-weight: 500;
         }
