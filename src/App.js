@@ -74,7 +74,7 @@ function App() {
           <div>
             <span>CONTACT</span>
             <p>
-              kendane@email.com
+              kandane@email.com
               <br />
               082193851294
             </p>
@@ -87,7 +87,7 @@ function App() {
             <a href="#" className="fa fa-linkedin"></a>
           </div>
           <div className="copy-right">
-            © Copyright Kendane 2022. All Rights Reserved.
+            © Copyright Kandane 2022. All Rights Reserved.
           </div>
         </div>
       </footer>

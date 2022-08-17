@@ -10,7 +10,7 @@ export default class Certificate extends Component {
           <div className="certificate-msg ">
             <h1>Our Certification and Accreditation</h1>
             <p>
-              <span>Kendane </span>
+              <span>Kandane </span>
               merupakan sebuah perusahaan yang beranggotakan para ahli
               bersertifikasi di bidang compliance dan Cyber security bertujuan
               untuk mendorong terjadinya praktik bisnis yang patuh dan sesuai
