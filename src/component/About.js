@@ -7,6 +7,8 @@ export default class About extends Component {
     return (
       <div className="about" id="about">
         <div className="about-msg-container">
+          <div className="left triangle"></div>
+          <div className="right triangle "></div>
           <div className="about-msg">
             <h1>Why you should hire us</h1>
             <p>

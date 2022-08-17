@@ -74,7 +74,7 @@ function App() {
           <div>
             <span>CONTACT</span>
             <p>
-              kandane@email.com
+              kandane@gmail.com
               <br />
               +6282193851294
             </p>
