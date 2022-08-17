@@ -7,40 +7,32 @@
 
 .about-msg-container{
     padding-block: 2.5rem;
-    // background-color: $blue;
     display: flex;
     justify-content: center;
     position: relative;
-    // background-image: linear-gradient(135deg, $yellow, $blue);
 
     overflow: hidden;
 
     .about-msg{
         margin: auto;
         max-width: 720px;
-        // color: $header;
-        // background-color: $blue-light;
         padding: 1.5rem;
         padding-block: 2.5rem;
         padding-inline: 1.25rem;
         margin-inline: 1rem;
         text-align: center;
-        // border: 2px solid $header;
-        // border-top: 6px solid $header;
+
     }
 
     h1{
         font-weight: 500;
         margin-bottom: 1rem;
-        // color: $blue;
-        // background-color: $blue-light;
         font-size: 2.5rem;
     }
 
     p {
         text-align: left;
         font-size: 1.125rem;
-        // color: $header;
     }
 
     .triangle{
@@ -70,13 +62,9 @@
 
 
 .container-o{
-    // margin: 4% 10%;
     padding-block: 2.5rem;
-    // padding-bottom: 0.5rem;
     margin-bottom: 2.5rem;
 
-    // border-bottom: 2px solid $blue;
-    // border-top: 2px solid $blue;
 
     display: flex;
     flex-direction: column;
@@ -103,8 +91,6 @@
         margin: 4% 0%;
         text-align: left;
 
-        // background-color: $yellow;
-        
         h3{
             font-weight: 500;
             color: $blue;
@@ -131,7 +117,6 @@
     .container-o{
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 2.5rem;
 
     }
     .container-our-img{
@@ -140,7 +125,7 @@
     }
 
     .container-o, .about-msg-container{
-        padding-block: 2.5rem;
+        padding-block: 5rem;
     }
 
     .about{
