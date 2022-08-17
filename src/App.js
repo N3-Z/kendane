@@ -76,7 +76,7 @@ function App() {
             <p>
               kandane@email.com
               <br />
-              082193851294
+              +6282193851294
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ function App() {
             <a href="#" className="fa fa-linkedin"></a>
           </div>
           <div className="copy-right">
-            © Copyright Kandane 2022. All Rights Reserved.
+            © Copyright Kandane 2022, All Rights Reserved.
           </div>
         </div>
       </footer>
