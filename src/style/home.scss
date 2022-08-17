@@ -6,23 +6,27 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba($color: #000000, $alpha: 1);
     height: 100vh;
 
     .home-msg{
         color: white;
-        padding: 2% 10%;
-        padding-right: 20%;
+
         span{
-            font-size: 40px;
+            font-size: 2.5rem;
         }
         b{
-            font-size: 40px;
-            color: $blue;
+            font-size: 2.5rem;
+            color: $yellow;
         }
         p{
-            font-size: 19px;
+            font-size: 1.125rem;
+            max-width: 768px;
+            line-height: 1.5rem;
         }
+
     }
+
     .home-img{
         width: 100%;
         height: 40%;
@@ -56,4 +60,17 @@
 
 .typing-text{
     color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+    .home-msg{
+        span, b{
+            font-size: 3.5rem !important;
+        }
+
+        p{
+            font-size: 1.25rem !important;
+        }
+
+    }
 }
