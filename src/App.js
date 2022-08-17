@@ -3,7 +3,8 @@ import Home from "./component/Home";
 import Services from "./component/Services";
 import About from "./component/About";
 import Certificate from "./component/Certificate";
-import logo from "./img/google.png";
+import logo from "./img/Kandane-logo.png";
+import logoDark from "./img/Kandane-logo-dark.png";
 // import Typical from 'react-typical'
 // import logo from './img/logo.jfif'
 import $ from "jquery";
@@ -13,8 +14,10 @@ function App() {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 1) {
         $("header").addClass("sticky");
+        $(".img-logo").attr('src',logoDark);
       } else {
         $("header").removeClass("sticky");
+        $(".img-logo").attr('src',logo);
       }
     });
   });
@@ -39,7 +42,7 @@ function App() {
       <header className="shadow">
         <div className="container">
           <div className="header-logo">
-            <img src={logo} alt="" />
+            <img className="img-logo" src={logo} alt="Kandane" />
           </div>
           <div className="header-menu">
             <a href="#home" onClick={home}>
