@@ -22,7 +22,7 @@ function App() {
     });
   });
   function home() {
-    $("*").animate({ scrollTop: 0 }, 1000);
+    $('body,html').animate({ scrollTop: 0 }, 1000);
   }
   function about() {
     let header_height = $("header").height();
@@ -30,12 +30,12 @@ function App() {
     let service_height = $("#service").height();
     let certificate_height = $("#certificate").height();
     let total_height = certificate_height + service_height + home_height + header_height + 120;
-    $("*").animate({ scrollTop: total_height }, 1000);
+    $('body,html').animate({ scrollTop: total_height }, 800);
   }
   function service() {
     let header_height = $("header").height();
     let home_height = $("#home").height();
-    $("*").animate({ scrollTop: home_height - header_height }, 1000);
+    $('body,html').animate({ scrollTop: home_height - header_height }, 1000);
   }
   return (
     <div className="App">
