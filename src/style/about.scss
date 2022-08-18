@@ -55,16 +55,12 @@
         transform: rotate(135deg);
         background-color: $blue;
     }
-
-
 }
-
 
 
 .container-o{
     padding-block: 2.5rem;
-    margin-bottom: 2.5rem;
-
+    // margin-bottom: 2.5rem;
 
     display: flex;
     flex-direction: column;
@@ -129,7 +125,8 @@
     }
 
     .about{
-        padding-bottom: 5rem;
+        padding-bottom: 8rem;
+        // margin-bottom: 5rem;
     }
 }
 
