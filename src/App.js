@@ -3,7 +3,8 @@ import Home from "./component/Home";
 import Services from "./component/Services";
 import About from "./component/About";
 import Certificate from "./component/Certificate";
-import logo from "./img/google.png";
+import logo from "./img/Kandane-logo.png";
+import logoDark from "./img/Kandane-logo-dark.png";
 // import Typical from 'react-typical'
 // import logo from './img/logo.jfif'
 import $ from "jquery";
@@ -13,13 +14,15 @@ function App() {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 1) {
         $("header").addClass("sticky");
+        $(".img-logo").attr('src',logoDark);
       } else {
         $("header").removeClass("sticky");
+        $(".img-logo").attr('src',logo);
       }
     });
   });
   function home() {
-    $("*").animate({ scrollTop: 0 }, 1000);
+    $('body,html').animate({ scrollTop: 0 }, 1000);
   }
   function about() {
     let header_height = $("header").height();
@@ -27,19 +30,19 @@ function App() {
     let service_height = $("#service").height();
     let certificate_height = $("#certificate").height();
     let total_height = certificate_height + service_height + home_height + header_height + 120;
-    $("*").animate({ scrollTop: total_height }, 1000);
+    $('body,html').animate({ scrollTop: total_height }, 800);
   }
   function service() {
     let header_height = $("header").height();
     let home_height = $("#home").height();
-    $("*").animate({ scrollTop: home_height - header_height }, 1000);
+    $('body,html').animate({ scrollTop: home_height - header_height }, 1000);
   }
   return (
     <div className="App">
       <header className="shadow">
         <div className="container">
           <div className="header-logo">
-            <img src={logo} alt="" />
+            <img className="img-logo" src={logo} alt="Kandane" />
           </div>
           <div className="header-menu">
             <a href="#home" onClick={home}>
@@ -71,9 +74,9 @@ function App() {
           <div>
             <span>CONTACT</span>
             <p>
-              kendane@email.com
+              kandane@gmail.com
               <br />
-              082193851294
+              +6282193851294
             </p>
           </div>
         </div>
@@ -84,7 +87,7 @@ function App() {
             <a href="#" className="fa fa-linkedin"></a>
           </div>
           <div className="copy-right">
-            © Copyright Kendane 2022. All Rights Reserved.
+            © Copyright Kandane 2022, All Rights Reserved.
           </div>
         </div>
       </footer>

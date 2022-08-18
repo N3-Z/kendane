@@ -7,6 +7,8 @@ export default class About extends Component {
     return (
       <div className="about" id="about">
         <div className="about-msg-container">
+          <div className="left triangle"></div>
+          <div className="right triangle "></div>
           <div className="about-msg">
             <h1>Why you should hire us</h1>
             <p>
@@ -16,7 +18,7 @@ export default class About extends Component {
               Perlindungan nasabah (POJK number 18 tahun 2018).
               <br />
               <br />
-              Kendane has commitment to protect your customer data and working
+              Kandane has commitment to protect your customer data and working
               closely with your information security teams.
               <br />
               <br />
@@ -28,7 +30,7 @@ export default class About extends Component {
 
         <div className="container-o container">
         <div className="container-our-img">
-            <img src={serviceimg} alt="Kendane Services" />
+            <img src={serviceimg} alt="Kandane Services" />
           </div>
           <div className="container-our ">
             <div className="our-services">

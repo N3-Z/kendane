@@ -59,6 +59,7 @@ header{
         text-decoration: none;
         position: relative;
         transition: all 0.2s ease;
+        user-select: none;
     }
 
     .header-menu a:hover{
@@ -157,6 +158,14 @@ footer{
         justify-content: space-between !important;
         width: 100%;
         padding-inline: 2rem;
+    }
+
+    .header-menu{
+        max-width: 400px !important;
+    }
+
+    .header-menu a{
+        font-size: 1.5rem;
     }
 }
 
